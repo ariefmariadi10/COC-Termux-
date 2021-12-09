@@ -530,3 +530,15 @@ body {
         font-size: .6rem;
     }
 }
+
+@media (max-width:376px) {
+    .main {
+        height: 150vh;
+    }
+    .about .about-img {
+        margin-top: 1rem;
+    }
+    .about .about-img img {
+        width: 270px;
+    }
+}
