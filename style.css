@@ -1,0 +1,532 @@
+@font-face {
+    font-family: 'Supercell';
+    src: url(./asset/supercell.ttf);
+}
+:root {
+    --yellow : #ffd000;
+}
+.flex-div {
+    display: flex;
+    align-items: center;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Supercell';
+}
+body {
+    background: #000;
+}
+.main {
+    background: url(./asset/pic-1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 120vh;
+    background-position: center;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+.coc-nav {
+    justify-content: space-between;
+    padding: 1.2rem 3rem;
+    background: transparent;
+    top: 0;
+    left:0;
+    flex-wrap: wrap;
+}
+.left-nav h1 {
+    font-size: 1rem;
+    color: var(--yellow);
+    text-shadow: 2px 3px 8px #000;
+}
+.nav-bars {
+    padding: 3px 8px;
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: none;
+}
+.nav-bars:active {
+    box-shadow: 2px 2px 10px #fff;
+}
+.mid-nav  ul li {
+    display: inline-block;
+}
+.mid-nav  ul li a{
+    padding: 0 2rem;
+    color: #fff;
+}
+.mid-nav  ul li a:hover {
+    color: var(--yellow);
+}
+.mid-nav ul .right-nav {
+    display: inline-block;
+}
+.right-nav button {
+    padding: 10px 30px;
+    cursor: pointer;
+    border: none;
+    background: #000;
+    color: #fff;
+    border-radius: 20px;
+    transition: all ease 0.5s;
+}
+.right-nav button:hover {
+    background: var(--yellow);
+    color: #000;
+}
+
+/* Main Section */
+
+.coc-main .container {
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.coc-main .left-container {
+    background: rgb(0,0,0,0.8);
+    padding: 1rem 1.5rem;
+    margin: 0 1rem;
+}
+.coc-main .left-container h1{
+    color: var(--yellow);
+    font-size: 1.2rem;
+    text-align: center;
+}
+.coc-main .left-container h3 {
+    color: var(--yellow);
+    font-size: .8rem;
+    text-align: center;
+}
+.coc-main .form-input {
+    margin-top: 2rem;
+}
+.coc-main .form-input .input-1 {
+    margin-top: 10px;
+}
+.coc-main .form-input .input-1 p {
+    font-size: .6rem;
+    color: #fff;
+}
+.coc-main .form-input .input-1 .input {
+    background: #000;
+    padding: 3px 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.coc-main .form-input .input-1 .input input {
+    background: transparent;
+    margin-left: 5px;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.coc-main .form-input .input-1 .input input::placeholder {
+    color: white;
+}
+.coc-main .form-input .input-1 .input img {
+    width: 30px;
+}
+.main-button {
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+}
+.main-button button {
+    padding: 8px 26px;
+    background: var(--yellow);
+    color: #000;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: all ease 0.5s;
+}
+.main-button button:hover {
+    background: #000;
+    color: #fff;
+}
+.coc-main .right-container {
+    background: rgb(0,0,0,0.8);
+    padding: 1rem 1rem;
+    margin: 0 1rem;
+}
+.right-container h1 {
+    color: #fff;
+    font-size: .8rem;
+    padding-bottom: 5px;
+}
+.right-container .recent-1 {
+    background: #000;
+    padding: 3px 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.right-container .recent-1 .name-recent {
+    justify-content: space-between;
+}
+.right-container .recent-1 .name-recent .country {
+    text-align: center;
+}
+.right-container .recent-1 .name-recent img{
+    width: 25px;
+}
+.right-container .recent-1 .name-recent h1 {
+    font-size: .7rem;
+    padding-left: 5px;
+}
+.right-container .recent-1 .name-recent p {
+    font-size: .4rem;
+    color: #fff;
+    padding-left: 25px;
+}
+.right-container .recent-1 .item {
+    padding-top: 3px;
+    padding-left: 30px;
+}
+.right-container .recent-1 .item img {
+    width: 12px;
+}
+.right-container .recent-1 .item p {
+    font-size: .4rem;
+    color: #fff;
+    padding-left: 3px;
+}
+.recent-button {
+    margin-top: 10px;
+    justify-content: center;
+}
+.recent-button button {
+    padding: 6px 26px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+    font-size: .8rem;
+    transition: all ease 0.5s;
+}
+.recent-button button:hover {
+    color: #000;
+    background: var(--yellow);
+}
+
+.middle-container {
+    background: rgb(0,0,0,0.8);
+    display: none;
+}
+.middle-input {
+    margin: 1rem 1rem;
+}
+.middle-input p {
+    font-size: .8rem;
+    color: #fff;
+    margin-top: 5px;
+}
+.middle-input button {
+    cursor: pointer;
+    padding: 8px 26px;
+    border: none;
+    border-radius: 5px;
+    background: var(--yellow);
+    transition: all ease 0.5s;
+}
+.middle-input button:hover {
+    background: #000;
+    color: white;
+}
+.middle-input .account {
+    background: #000;
+    margin-top: 5px;
+}
+.middle-input input {
+    background: transparent;
+    border: none ;
+    outline: none;
+    padding: 5px 5px;
+}
+.middle-input input::placeholder {
+    color: white;
+    font-size: .7rem;
+}
+.middle-label {
+    color: white;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: .7rem;
+}
+.middle-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+.middle-label:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+.middle-label input:checked ~ .checkmark {
+    background-color: #000;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.middle-label input:checked ~ .checkmark:after {
+    display: block;
+}
+.middle-label .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* About Section */
+.about {
+    background: #000;
+    text-align: center;
+    margin-top: 6rem;
+}
+.about h1 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+.about p {
+    color: #fff;
+    font-size: .8rem;
+    padding: 10px 12rem 0 12rem;
+}
+.about .about-img {
+    margin-top: 3rem;
+    justify-content: center;
+}
+.about .about-img img {
+    width: 480px;
+    padding: 0 1rem;
+}
+.about .about-button {
+    margin-top: 3rem;
+}
+.about .about-button button {
+    padding: 10px 30px;
+    background: var(--yellow);
+    color: #000;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.about .about-button button:hover {
+    background: transparent;
+    color: var(--yellow);
+    border: 1px solid var(--yellow);
+}
+.our-footer {
+    margin-top: 5rem;
+}
+.container {
+    justify-content: space-between;
+    padding: 0 3rem;
+    margin: 0;
+    align-items: baseline;
+}
+.about-footer {
+    flex-basis: 25%;
+    margin: 0 1rem;
+    padding: 0 10px;
+}
+.about-footer h1 {
+    color: yellow;
+    font-size: 1rem;
+}
+.about-footer  p {
+    padding-top: 10px;
+    font-size: .6rem;
+    color: #fff;
+}
+.quick-link {
+    flex-basis: 25%;
+    margin: 0 1rem;
+}
+.quick-link h1 {
+    font-size: 1rem;
+    color: #fff;
+}
+.quick-link hr {
+    color: #fff;
+    width: 50%;
+}
+.quick-link ul li {
+    margin-top: 10px;
+}
+.quick-link ul li a {
+    color: #fff;
+    font-size: .8rem;
+}
+.quick-link ul li a:hover {
+    border-bottom: 1px solid #fff;
+}
+.contact-us {
+    flex-basis: 25%;
+    margin: 0 1rem;
+}
+.contact-us h1 {
+    font-size: 1rem;
+    color: #fff;
+}
+.contact-us hr {
+    color: #fff;
+    width: 50%;
+    margin-bottom: 1rem;
+}
+.contact-us a {
+    color: #fff;
+    font-size: .8rem;
+}
+.contact-us a:hover {
+    border-bottom: 1px solid #fff;
+}
+.social-media {
+    flex-basis: 25%;
+    margin: 0 1rem;
+}
+.social-media h1 {
+    font-size: 1rem;
+    color: #fff;
+}
+.social-media hr {
+    color: #fff;
+    width: 50%;
+    margin-bottom: 1rem;
+}
+.social-media a {
+    color: #fff;
+}
+.copyright {
+    margin-top: 3rem;
+}
+.copyright p{
+    color: #fff;
+    font-size: .7rem;
+    text-align: center;
+}
+
+/* Responsive Web */
+
+@media (max-width:413px) {
+    .left-nav h1 {
+        font-size: 1rem;
+    }
+    .nav-bars {
+        display: block;
+    }
+    .mid-nav {
+        margin: 0;
+        max-height: 0px;
+        width: 100%;
+        overflow: hidden;
+        visibility: hidden;
+        transition: all ease-in-out 0.3s;
+    }
+    .mid-nav.open {
+        visibility: visible;
+    }
+    .mid-nav ul li {
+        display: block;
+    }
+    .mid-nav ul li a {
+        display: block;
+        text-align: left;
+        padding: 0;
+        margin-top: 1rem;
+    }
+    .right-nav {
+        margin-top: 1rem;
+    }
+    .container {
+        display: block;
+    }
+    .main{
+        height: 112vh;
+    }
+    .coc-main .left-container {
+        margin: 0 .3rem;
+    }
+    .coc-main .form-input .input-1 .input input::placeholder {
+        color: white;
+        font-size: .7rem;
+    }
+    .coc-main .right-container {
+        margin: 0 .3rem;
+        margin-top: 2rem;
+    }
+    .coc-main .container {
+        margin-top: 1rem;
+    }
+    .about p {
+        padding: 10px 1rem;
+    }
+    .about-img{
+        display: block;
+    }
+    .about .about-img img {
+        width: 320px;
+        padding: 0;
+        margin-top: 1rem;
+    }
+    .about .about-button {
+        margin-top: 2rem;
+    } 
+    .about-footer {
+        flex-basis: 100%;
+        margin: 0;
+        padding: 0 15px;
+    }
+    .quick-link {
+        flex-basis: 100%;
+        margin-top: 2rem;
+    }
+    .contact-us {
+        flex-basis: 100%;
+        margin-top: 2rem;
+    }
+    .social-media {
+        flex-basis: 100%;
+        margin-top: 2rem;
+    }
+    .copyright p {
+        font-size: .6rem;
+    }
+}
